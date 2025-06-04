@@ -1,11 +1,9 @@
 import {Text, View, StyleSheet} from "react-native";
-import { Link } from "expo-router";
 
-export default function Index() {
+export default function Settings() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Roster</Text>
-      <Link href="/settings" style={styles.btn}>Go to Settings</Link>
+      <Text style={styles.text}>Settings</Text>
     </View>
   );
 }
@@ -18,11 +16,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   text: {
-    color: '#000',
-  },
-  btn: {
-    fontSize: 20,
-    textDecorationLine: 'underline',
     color: '#000',
   },
 });
