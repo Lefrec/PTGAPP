@@ -6,6 +6,7 @@ export default function RootLayout() {
     <Tabs
         screenOptions={{
             tabBarActiveTintColor: '#ffd33d',
+            tabBarInactiveTintColor: '#FFF',
             headerStyle: {
                 backgroundColor: '#721911',
             },
@@ -17,6 +18,13 @@ export default function RootLayout() {
     }}
 >
       <Tabs.Screen name="index"
+      options={{
+        title: 'Army',
+        tabBarIcon: ({color}) => (
+            <FontAwesome6 name="shield-halved" size={24} color={color}/>
+        )
+      }}/>
+      <Tabs.Screen name="roster"
       options={{
         title: 'Roster',
         tabBarIcon: ({color}) => (

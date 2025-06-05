@@ -1,9 +1,9 @@
 import {Text, View, StyleSheet} from "react-native";
 
-export default function Index() {
+export default function Roster() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Army</Text>
+      <Text style={styles.text}>Roster</Text>
     </View>
   );
 }
