@@ -5,7 +5,7 @@ export default function Index() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Army</Text>
-      <Ability/>
+      <Ability timing="timing de la capa" title="titre de la capa" desc="description de la capa"/>
     </View>
   );
 }
@@ -17,7 +17,6 @@ const styles = StyleSheet.create({
     padding: 20,
     backgroundColor: '#F2F2F2',
     alignItems: 'center',
-    justifyContent: 'center',
   },
   text: {
     color: '#000',
